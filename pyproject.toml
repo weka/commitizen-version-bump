@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "commitizen-version-bump"
+version = "0.1.0"
+description = "Commitizen customized for Weka projects (https://commitizen-tools.github.io/commitizen/customization)"
+authors = ["Weka <hello@weka.io>"]
+packages = [
+    {include = "cz_version_bump"}
+]
+
+[tool.poetry.dependencies]
+commitizen = ">=3"
+python = ">=3.8"
+
+[tool.poetry.plugins."commitizen.plugin"]
+cz_version_bump = "cz_version_bump:WekaCommitizen"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
