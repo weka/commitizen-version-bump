@@ -8,7 +8,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-commitizen = "==4.7.0"
+commitizen = ">=3"
 python = ">=3.8"
 
 [tool.poetry.plugins."commitizen.plugin"]
